@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Ví Dụ</title>
+    <style>
+        /* CSS để tạo giao diện và các hiệu ứng */
+        /* CSS cho input controls và biểu mẫu liên hệ */
+        
+        input[type="text"],
+        textarea,
+        button {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        /* CSS cho navigation */
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        /* CSS cho animations */
+        
+        @keyframes example {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .animation {
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Input Controls và Biểu mẫu liên hệ -->
+    <form action="#" method="post">
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Nội dung tin nhắn" required></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <!-- Animations -->
+    <div class="animation" style="width: 100px; height: 100px; background-color: #f00;"></div>
+
+    <!-- Guided Actions: JavaScript để thực hiện hành động hướng dẫn -->
+    <script>
+        // Code JavaScript có thể được thêm vào đây để thực hiện hành động hướng dẫn
+        // Ví dụ: validateForm() để kiểm tra biểu mẫu liên hệ trước khi gửi
+    </script>
+</body>
+
+</html>
